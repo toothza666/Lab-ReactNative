@@ -1,8 +1,8 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import Weather  from './components/Weather';
-import constants from 'picomatch/lib/constants';
-
+import Constants  from 'expo-constants';
+import { StatusBar }  from 'expo-status-bar';
 
 
 export default function App() {
@@ -17,6 +17,6 @@ export default function App() {
 
 const styles = StyleSheet.create({
     container: {
-      paddingTop: constants.StatusBarHeight
-  },
+      paddingTop: Constants.statusBarHeight
+  }
 });
