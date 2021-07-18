@@ -6,7 +6,7 @@ import { useEffect } from "react"
 
 export default function Weather(props) {
     
-     const [unitsSystem, setUnitsSystem] = useState('metric')
+    //  const [unitsSystem, setUnitsSystem] = useState('metric')
     useEffect(() => {
         console.log(`fetching data with zipCode = ${props.zipCode}`)
         if (props.zipCode) {
