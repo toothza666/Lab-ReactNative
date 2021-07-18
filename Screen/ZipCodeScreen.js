@@ -37,15 +37,26 @@ export default function ZipCodeScreen(){
 
 const styles = StyleSheet.create({
     zipItem:{
-        flex: 1,
-        flexDirection : 'row',
-        justifyContent:'space-between'
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        backgroundColor: '#fff',
+        borderRadius: 10,
+        marginTop:20,
+        marginLeft: 80,
+        marginRight:80,
+        padding: 10  
     },
     zipPlace:{
-        flex: 1,
+        textAlign: 'center',
+        fontWeight: 'bold',
+        fontSize: 25,
+        color:'#fff'
     },
     zipCode: {
-        flex: 1,
+        textAlign: 'center',
+        fontWeight: 'bold',
+        fontSize: 25,
+        color:'#fff'
     }
 })
 
