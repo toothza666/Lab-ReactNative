@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from "react"
 import { ImageBackground, Text, StyleSheet,View } from 'react-native'
 import Forecast from "./Forecast"
 import { useEffect } from "react"
@@ -50,13 +50,13 @@ const styles = StyleSheet.create({
     },
     blackshade: {
         backgroundColor: 'rgba(0,0,0,0.1)',
-        height: '35%',
+        height: '30%',
         width: '100%'
     },
     msg: {
         paddingTop: 20,
         color: 'rgb(255,255,255)',
         textAlign: 'center',
-        fontSize: 20
+        fontSize: 15
     },
 })
