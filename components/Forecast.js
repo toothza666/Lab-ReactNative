@@ -92,16 +92,16 @@ const styles = StyleSheet.create({
       },
 
     Info_Box_View:{
-        height:"40%",
+        height:"30%",
         width:"100%",
         justifyContent:"center",
         alignItems:"center"
     },
     Info_Holder_Veiw:{
-        height:"100%",
+        height:"170%",
         width:"90%",
-        backgroundColor: 'rgba(255, 255, 255, 0.6)',
-        borderRadius:15
+        backgroundColor: 'rgba(0, 0, 0, 0.1)',
+        borderRadius:25
     },  
     Humidity:{
         fontSize:18,

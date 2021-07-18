@@ -2,10 +2,11 @@ import React, { useState } from "react"
 import { ImageBackground, Text, StyleSheet,View } from 'react-native'
 import Forecast from "./Forecast"
 import { useEffect } from "react"
+// import UnitsPicker from '@react-native-community/picker'
 
 export default function Weather(props) {
     
-    
+     const [unitsSystem, setUnitsSystem] = useState('metric')
     useEffect(() => {
         console.log(`fetching data with zipCode = ${props.zipCode}`)
         if (props.zipCode) {
@@ -39,6 +40,7 @@ export default function Weather(props) {
         <View>
             <ImageBackground source={require('../unnamed.jpg')} style={styles.backdrop}>
                 <View>
+                {/* <UnitsPicker unitsSystem={unitsSystem} setUnitsSystem={setUnitsSystem} /> */}
                 {/* <View style={styles.blackshade}> */}
                 {/* <Text style={styles.msg}>Zip Code {props.zipCode}</Text> */}
                 <Forecast {...forecastInfo} />
