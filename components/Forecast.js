@@ -19,7 +19,7 @@ export default function Forecast(props){
         </View>
         <View style={styles.Info_Box_View}>
           <View style={styles.Info_Holder_Veiw}>
-            <Text style={styles.oc}>{props.temp} °C</Text>
+            <Text style={styles.Temp}>{props.temp} °C</Text>
             <Text style={styles.Humidity}> Humidity  {props.humidity}</Text>
           </View>
         </View>
@@ -38,22 +38,22 @@ const styles = StyleSheet.create({
     Description: {
         textAlign: 'center',
         color: 'rgb(255,255,255)',
-        fontSize: 30,
+        fontSize: 20,
         margin: 10
     },
-    // Temp: {
-    //     textAlign: 'center',
-    //     color: 'rgb(255,255,255)',
-    //     fontWeight: 'bold',
-    //     fontSize: 36,
-    //     margin: 10
-    // },
-    oc: {
-        textAlign: 'center',
-        color: 'rgb(255,255,255)',
-        fontWeight: 'normal',
-        fontSize: 28
+    Temp: {
+        textAlign: 'left',
+        color: '#FFF',
+        fontWeight: 'bold',
+        fontSize: 36,
+        margin: 10
     },
+    // oc: {
+    //     textAlign: 'center',
+    //     color: '#FFF',
+    //     fontWeight: 'normal',
+    //     fontSize: 28
+    // },
     View: {
         flexDirection: 'column',
         textAlign: 'center',
@@ -61,53 +61,52 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     Weather_Box_Main:{
-        height:"50%",
+        height:"45%",
         width:"100%",
         justifyContent:"center",
-        alignItems:"center",
         flexDirection:"row"
       },
-
       City: {
-        fontSize: 20,
+        fontSize: 30,
         color:"#FFF",
         marginLeft:"5%",
-        marginTop:"5%",
+        marginTop:"6%",
         fontWeight:"bold",
         justifyContent:"center",
         alignItems:"center",
         flexDirection:"row"
     },
     Weather_Holder_View:{
-        height:"100%",
+        height:"50%",
         width:"80%",
-        backgroundColor: 'rgba(255, 255, 255, 0.4)',
-        borderRadius:20,
+        backgroundColor: 'rgba(255, 255, 255, 0.5)',
+        borderRadius:30,
+        marginLeft: 20,
+        marginRight:30,
         alignItems:"center",
         flexDirection:"row"
       },
-    Humidity:{
-        fontSize:18,
-        color:"#0E0301",
-        marginLeft:"15%",
-        marginTop:"2%"
-    },
-
     Weather_Image:{
         height:"80%",
-        width:"50%"
+        width:"40%"
       },
 
     Info_Box_View:{
-        height:"37%",
+        height:"40%",
         width:"100%",
         justifyContent:"center",
         alignItems:"center"
     },
     Info_Holder_Veiw:{
-        height:"80%",
+        height:"100%",
         width:"90%",
         backgroundColor: 'rgba(255, 255, 255, 0.6)',
         borderRadius:15
+    },  
+    Humidity:{
+        fontSize:18,
+        color:"#0E0301",
+        marginLeft:"15%",
+        marginTop:"5%"
     },
 })
