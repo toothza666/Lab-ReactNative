@@ -13,9 +13,12 @@ export default function Weather(props) {
                 .then((response) => response.json())
                 .then((json) => {
                     setForecastInfo({
+                        name: json.name,
+                        icon: json.weather[0].icon,
                         main: json.weather[0].main,
                         description: json.weather[0].description,
-                        temp: json.main.temp
+                        temp: json.main.temp,
+                        humidity: json.main.humidity,
                     });
                 })
                 .catch((error) => {
@@ -25,9 +28,12 @@ export default function Weather(props) {
         }, [props.zipCode])
 
     const [forecastInfo, setForecastInfo] = useState({
-        main : '-',
-        deecription : '-',
-        temp: 0
+        name: 'loading...',
+        icon: "",
+        main : 'loading...',
+        deecription : 'loading...',
+        temp: 0,
+        humidity: 0
     })
     return (
         <View>

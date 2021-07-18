@@ -27,6 +27,8 @@ export default function ZipCodeScreen(){
     const navigation = useNavigation()
     return (
         <ImageBackground source={require('../unnamed.jpg')} style={styles.backdrop}>
+            <Text style = {styles.text1}>Weather</Text>
+            <Text style = {styles.text2}>Forecast</Text>
         <FlatList
             data = {availableZipItems}
             keyExtractor = {item => item.code}
@@ -63,7 +65,22 @@ const styles = StyleSheet.create({
     backdrop: {
         width: '100%',
         height: '100%',
-    }
+    },
+    
+    text1: {
+        fontSize:30,
+        color:"#fffacd",
+        fontWeight:"bold",
+        marginLeft:"10%",
+        marginTop:"5%"
+    },
+    text2: {
+        fontSize:50,
+        color:"#f0f0f0",
+        fontWeight:"bold",
+        marginLeft:"15%",
+    },
+
 
 })
 
